@@ -1,6 +1,62 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    signingConfigs {
+
+        debug {
+            File signingPropFile = rootProject.file('signing.properties')
+            if (signingPropFile.exists()) {
+                Properties signingProp = new Properties()
+                signingProp.load(signingPropFile.newDataInputStream())
+                storeFile file(signingProp.get("debug.storeFile"))
+                storePassword signingProp.get("debug.storePassword")
+                keyAlias signingProp.get("debug.keyAlias")
+                keyPassword signingProp.get("debug.keyPassword")
+            } else if (System.getenv('DEBUG_KEYSTORE_BASE64') != null) {
+                storeFile decodeKeyStoreFileFromBase64Env('DEBUG_KEYSTORE_BASE64')
+                storePassword System.getenv('DEBUG_KEYSTORE_PASSWORD')
+                keyAlias System.getenv('DEBUG_KEYSTORE_KEY_ALIAS')
+                keyPassword System.getenv('DEBUG_KEYSTORE_KEY_PASSWORD')
+            }
+        }
+        release {
+            File signingPropFile = rootProject.file('signing.properties')
+            if (signingPropFile.exists()) {
+                Properties signingProp = new Properties()
+                signingProp.load(signingPropFile.newDataInputStream())
+                storeFile file(signingProp.get("release.storeFile"))
+                storePassword signingProp.get("release.storePassword")
+                keyAlias signingProp.get("release.keyAlias")
+                keyPassword signingProp.get("release.keyPassword")
+            } else if (System.getenv('RELEASE_KEYSTORE_BASE64') != null) {
+                storeFile decodeKeyStoreFileFromBase64Env('RELEASE_KEYSTORE_BASE64')
+                storePassword System.getenv('RELEASE_KEYSTORE_PASSWORD')
+                keyAlias System.getenv('RELEASE_KEYSTORE_KEY_ALIAS')
+                keyPassword System.getenv('RELEASE_KEYSTORE_KEY_PASSWORD')
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            if (rootProject.file('signing.properties').exists()
+                || System.getenv('DEBUG_KEYSTORE_BASE64') != null) {
+                signingConfig signingConfigs.debug
+            }
+
+            // Debug Build시에 Native Library Debugging이 가능한 APK를 생성하도록 설정합니다.
+            jniDebuggable true
+        }
+        release {
+            if (rootProject.file('signing.properties').exists()
+                || System.getenv('RELEASE_KEYSTORE_BASE64') != null) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
