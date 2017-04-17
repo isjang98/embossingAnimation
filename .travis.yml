@@ -1,0 +1,46 @@
+android:
+  components:
+    - tools
+    - platform-tools
+    - tools
+    - build-tools-25.0.2
+    - android-25
+    - android-23
+    - add-on
+    - extra
+    - extra-android-m2repository
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+before_install:
+  - export JAVA7_HOME=/usr/lib/jvm/java-7-oracle
+  - export JAVA8_HOME=/usr/lib/jvm/java-8-oracle
+  - export JAVA_HOME=$JAVA8_HOME
+
+  # NDK
+  - git clone https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
+  - export ANDROID_NDK_HOME=$HOME/android-ndk-root
+  - echo "ndk.dir=$ANDROID_NDK_HOME" > local.properties
+
+notifications:
+  email:
+      recipients:
+        - isjang98@gmail.com
+      on_success: always
+      on_failure: always
+
+
+deploy:
+  api_key: $GITHUB_TOKEN
+  file: app/build/outputs/apk/app-release.apk
+  provider: releases
+  skip_cleanup: true
+  true:
+    repo: isjang98/embossingAnimation
+    tags: true
+env:
+  global:
+    - NDK_VERSION=r11c
+language: android
+script: "./gradlew build"
+sudo : required
