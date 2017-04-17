@@ -1,0 +1,2 @@
+# embossingAnimation
+Thumbnail Embossing Animation
