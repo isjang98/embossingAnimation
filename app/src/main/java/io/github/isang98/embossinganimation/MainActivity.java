@@ -1,13 +1,22 @@
 package io.github.isang98.embossinganimation;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+
+
+    Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new EmbossingThumbView(this));
+
+        mContext = this;
+
+
+        setContentView(new EmbossingThumbView(mContext));
     }
 }
