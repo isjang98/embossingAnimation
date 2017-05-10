@@ -84,5 +84,7 @@ public class EmbossingThumbView extends View {
             canvas.restore();
         }
         invalidate();
+
+        //jenkins test
     }
 }
