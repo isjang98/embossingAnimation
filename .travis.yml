@@ -30,7 +30,8 @@ notifications:
       on_success: always
       on_failure: always
   slack: droidknight2018:LGIZ5vEnnHyAPbACXVXLGIB4
-
+      on_success: always
+      on_failure: always
 
 deploy:
   api_key: $GITHUB_TOKEN
