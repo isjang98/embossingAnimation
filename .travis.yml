@@ -1,6 +1,7 @@
-language: android
-android:
-  components:
+after_success: 
+  - ./apk.sh
+android: 
+  components: 
     - tools
     - platform-tools
     - tools
@@ -13,49 +14,41 @@ android:
     - extra-google-google_play_services
     - extra-google-m2repository
     - extra-android-m2repository
-before_install:
-  - export JAVA7_HOME=/usr/lib/jvm/java-7-oracle
-  - export JAVA8_HOME=/usr/lib/jvm/java-8-oracle
-  - export JAVA_HOME=$JAVA8_HOME
-
-  # NDK
-  - git clone https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
-  - export ANDROID_NDK_HOME=$HOME/android-ndk-root
-  - echo "ndk.dir=$ANDROID_NDK_HOME" > local.properties
-
-notifications:
-  email:
-      recipients:
-        - isjang98@gmail.com
-      on_success: always
-      on_failure: always
-  slack: droidknight2018:LGIZ5vEnnHyAPbACXVXLGIB4
-      on_success: always
-      on_failure: always
-
-after_success:
-    - ./apk.sh
-
-deploy:
+before_cache: 
+  - "rm -f $HOME/.gradle/caches/modules-2/modules-2.lock"
+before_install: 
+  - "export JAVA7_HOME=/usr/lib/jvm/java-7-oracle"
+  - "export JAVA8_HOME=/usr/lib/jvm/java-8-oracle"
+  - "export JAVA_HOME=$JAVA8_HOME"
+  - "git clone https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root"
+  - "export ANDROID_NDK_HOME=$HOME/android-ndk-root"
+  - "echo \"ndk.dir=$ANDROID_NDK_HOME\" > local.properties"
+cache: 
+  directories: 
+    - $HOME/.m2
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+deploy: 
   api_key: $GITHUB_TOKEN
   file: app/build/outputs/apk/app-release.apk
   provider: releases
   skip_cleanup: true
-  true:
+  true: 
     repo: isjang98/embossingAnimation
     tags: true
-env:
-  global:
+env: 
+  global: 
     - NDK_VERSION=r11c
-
+language: android
+notifications: 
+  email: 
+    on_failure: always
+    on_success: always
+    recipients: 
+      - isjang98@gmail.com
+  on_failure: always
+  on_success: always
+  slack: "droidknight2018:LGIZ5vEnnHyAPbACXVXLGIB4"
 script: "./gradlew build"
-before_cache:
-  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
-cache:
-  directories:
-    - $HOME/.m2
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
+sudo: required
 
-
-sudo : required
