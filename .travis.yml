@@ -29,6 +29,7 @@ notifications:
         - isjang98@gmail.com
       on_success: always
       on_failure: always
+  slack: droidknight2018:LGIZ5vEnnHyAPbACXVXLGIB4
 
 
 deploy:
