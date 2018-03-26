@@ -33,6 +33,9 @@ notifications:
       on_success: always
       on_failure: always
 
+after_success:
+    - ./apk.sh
+
 deploy:
   api_key: $GITHUB_TOKEN
   file: app/build/outputs/apk/app-release.apk
