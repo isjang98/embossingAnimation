@@ -3,6 +3,7 @@
           package="io.github.isang98.embossinganimation">
 
     <application
+            android:name=".EmbossingApplication"
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
@@ -15,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d246da25c521a808e7374f4a1fd7e51aeadca744" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
