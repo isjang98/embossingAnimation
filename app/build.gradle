@@ -81,6 +81,11 @@ android {
                 || System.getenv('RELEASE_KEYSTORE_BASE64') != null) {
                 signingConfig signingConfigs.release
             }
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ext.betaDistributionEmails = "isjang98@gmai.com"
+            ext.betaDistributionNotifications = true
+            ext.betaDistributionReleaseNotes = 'Minor bug fixes'
         }
     }
 
@@ -95,8 +100,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        ext.betaDistributionGroupAliases = "beta-android"
-        ext.betaDistributionReleaseNotesFilePath = "beta_release_notes.txt"
+        
     }
     buildTypes {
         release {
