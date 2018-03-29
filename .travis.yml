@@ -55,7 +55,10 @@ notifications:
   on_failure: always
   on_success: always
   slack: "droidknight2018:LGIZ5vEnnHyAPbACXVXLGIB4"
-script: "./gradlew build"
+script:
+  - echo "apiKey=$API_KEY" >> ./app/fabric.properties
+  - echo "apiSecret=$API_SECRET" >> ./app/fabric.properties
+  - ./gradlew build"
 after_script:
   - ./gradlew assembleRelease crashlyticsUploadDistributionRelease
 sudo: required
