@@ -58,7 +58,7 @@ notifications:
 script:
   - echo "apiKey=$API_KEY" >> ./app/fabric.properties
   - echo "apiSecret=$API_SECRET" >> ./app/fabric.properties
-  - ./gradlew build"
+  - ./gradlew build
 after_script:
   - ./gradlew assembleRelease crashlyticsUploadDistributionRelease
 sudo: required
