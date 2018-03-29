@@ -1,5 +1,6 @@
 after_success: 
   - ./apk.sh
+dist: precise
 android: 
   components: 
     - tools
@@ -14,6 +15,11 @@ android:
     - extra-google-google_play_services
     - extra-google-m2repository
     - extra-android-m2repository
+licenses:
+  - android-sdk-preview-license-c81a61d9
+  - android-sdk-license-.+
+  - google-gdk-license-.+
+
 before_cache: 
   - "rm -f $HOME/.gradle/caches/modules-2/modules-2.lock"
 before_install: 
