@@ -57,6 +57,6 @@ notifications:
   slack: "droidknight2018:LGIZ5vEnnHyAPbACXVXLGIB4"
 script: "./gradlew build"
 after_script:
-  - ./gradlew crashlyticsUploadDistributionRelease
+  - ./gradlew assembleRelease crashlyticsUploadDistributionRelease
 sudo: required
 
