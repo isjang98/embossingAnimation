@@ -7,9 +7,16 @@ url_without_suffix="${url%.*}"
 reponame="$(basename "${url_without_suffix}")"
 msg=$(git log -1 --pretty=%B)
 echo "$tname"
+echo tname====
 echo $tname
 echo "$tagname"
+echo tagname====
 echo $tagname
+echo reponame====
+echo $reponame
+echo GIT_TAG_MESSAGE====
+echo $GIT_TAG_MESSAGE
+
 
 if [ $tagname -gt 0 ]
 then
