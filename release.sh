@@ -23,7 +23,7 @@ then
 	echo "tagname true"
 	echo $tagname
 	./github-release release --user isjang98 --repo $reponame --tag $tname --name $tname --description "${GIT_TAG_MESSAGE}" 
-	./github-release upload --user isjang98 --repo $reponame --tag $tname --name "app-release.apk" --file app/build/outputs/apk/app-*.apk
+	./github-release upload --user isjang98 --repo $reponame --tag $tname --name "app-release.apk" --file app/build/outputs/apk/app-release.apk
 else
 	echo "tagname false"
 fi
