@@ -1,0 +1,266 @@
+GIT_CHANGE_LOG=commit c596a2376938722b0495b54edba55f31ebd746ce
+Author: Jang Insu <isjang98@woowahan.com>
+Date:   Thu Apr 12 14:00:50 2018 +0900
+
+     test.sh 수정
+
+commit 700f369f9d0c6b7febf5a124d41e94d93477d70b
+Author: Jang Insu <isjang98@woowahan.com>
+Date:   Thu Apr 12 13:43:15 2018 +0900
+
+     test.sh 추가
+
+commit 9a6eee51adbe4a74660a5959487fdaf50dddde5f
+Author: Jang Insu <isjang98@woowahan.com>
+Date:   Thu Apr 12 13:30:23 2018 +0900
+
+    apkJenkins.sh 수정
+
+commit 980102bfb4b776a2ba06755eec393bba096403b1
+Author: Jang Insu <isjang98@woowahan.com>
+Date:   Thu Apr 12 10:59:57 2018 +0900
+
+    apkJenkins.sh 추가
+
+commit e4e42e683ccf57471da574b173fed599b8c962d6
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Sun Apr 1 06:54:09 2018 +0900
+
+     ver.1.0.1
+
+commit 0811162943f7982a7aab4d64c32774e583c88579
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Sun Apr 1 06:33:37 2018 +0900
+
+     Modify Version Code
+
+commit 98db75a5876387de6f18d12a27c71227fec3d1ee
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Fri Mar 30 02:38:58 2018 +0900
+
+     modify fail
+
+commit e2d04c8179c73a2293d9860fedd0b949ea01fdfa
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Fri Mar 30 02:22:30 2018 +0900
+
+     fabric to travis
+
+commit 157b8a7d26cabef93e36fd6899adc242fff3f061
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Fri Mar 30 02:09:04 2018 +0900
+
+     fabric using travis
+
+commit 6443c38fbdb8d6eb1f603f804c6bbc63c9befbfc
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Fri Mar 30 01:26:24 2018 +0900
+
+     fabric
+
+commit ccc61f03ff21a239435fd29e6ef525271df11b6f
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Fri Mar 30 01:14:54 2018 +0900
+
+     fabric release
+
+commit bc8a7cf9ed34cd2b3d81f93e544333814eb90382
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Fri Mar 30 00:35:58 2018 +0900
+
+     modify travis.yml
+
+commit 4eeebaaafeb3428d4bc2d2e2d853a5d9236928b1
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Fri Mar 30 00:22:11 2018 +0900
+
+     modify AndroidManifest.xml
+
+commit 04268c3815a9724967fe506474a1e3fb61d4ad33
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Thu Mar 29 23:46:31 2018 +0900
+
+     modify about fabric
+
+commit 6a3b4838a82f1a53b638a226848d4733bb1bd56b
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Thu Mar 29 23:29:39 2018 +0900
+
+    Fabric
+    
+    - Add Fabric
+
+commit d43024957cc068c62a669897a7195e7e3624968e
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Tue Mar 27 22:39:26 2018 +0900
+
+    SLACK_BOT_TOKEN 추가
+
+commit 6265c0a584ff7c93cc123956aa7b3a04dce00fb4
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Tue Mar 27 22:21:17 2018 +0900
+
+    Slack bot key 수정
+
+commit 4a8668f2b16d6ad782e60e2a51409ca6a155b1be
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Tue Mar 27 00:07:02 2018 +0900
+
+    traivs.yml 오류수정
+
+commit dbfeb605d60a58a322281e1c618337ce452b44a0
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Mon Mar 26 23:59:52 2018 +0900
+
+    Log TAG 추가
+
+commit c87085a0867e07c198f102b8613a13671750a715
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Mon Mar 26 23:51:37 2018 +0900
+
+    .travis.yml 수정 등
+    
+    - Add apk.sh
+    - after_success 추가 in travis.yml
+
+commit 8d1cbc08c1c48e0d24c7bd9720b33dec2c5dc9c2
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Mon Mar 26 23:30:51 2018 +0900
+
+    .travis.yml
+    
+    - slack notification 수정
+
+commit 2228beb2a25059e515b1c16d2f30a576e617b9f8
+Author: Jang Insu(word) <isjang98@gmail.com>
+Date:   Mon Mar 26 23:16:08 2018 +0900
+
+    .travis.yml 수정
+    
+    - slack notification 추가
+
+commit 8c09841b018e66844568f3bd84d337d41203d606
+Author: Jang insu <isjang98@gmail.com>
+Date:   Mon Sep 11 14:22:03 2017 +0900
+
+     - Chnage Gradle version -> 2.3.1
+
+commit 54384ed8ac19d5b59bfa2e7768b8663ecc9aa922
+Author: Jang insu <isjang98@gmail.com>
+Date:   Mon Sep 11 14:16:05 2017 +0900
+
+    Add Test Log
+
+commit df87bcf8f2a293588a23fad1c66c6bf4234fae6d
+Author: word <word@word.local>
+Date:   Wed May 10 16:02:18 2017 +0900
+
+    - jenkins webhook test
+
+commit fd9da12997fb3a4d73e16b4db7933ab8d6456977
+Author: Word <isjang98@gmail.com>
+Date:   Fri Apr 21 18:22:29 2017 +0900
+
+    Update build.gradle
+
+commit c0595b7d9424612064e45950cf7d10675c26ddaa
+Author: Word <isjang98@gmail.com>
+Date:   Fri Apr 21 18:11:20 2017 +0900
+
+    Update build.gradle
+
+commit 4f10ccb7e8b0c37e05326537749fc62cc01419d1
+Author: Word <isjang98@gmail.com>
+Date:   Fri Apr 21 17:44:06 2017 +0900
+
+    Update build.gradle
+
+commit 0fce497becdef3c494df13eeb760a1b910ee54ed
+Author: Word <isjang98@gmail.com>
+Date:   Fri Apr 21 17:38:13 2017 +0900
+
+    Update build.gradle
+
+commit fb154ce21ea58a3e2ee05a06cf595755bc633fd3
+Author: Word <isjang98@gmail.com>
+Date:   Fri Apr 21 17:15:15 2017 +0900
+
+    Update build.gradle
+
+commit 78304ada0f395bf73e52524294af1b7993e656a4
+Author: Word <isjang98@gmail.com>
+Date:   Fri Apr 21 17:12:19 2017 +0900
+
+    Update build.gradle
+
+commit 22fcf9633662285fce026f65c529c54bb623c547
+Author: Word <isjang98@gmail.com>
+Date:   Fri Apr 21 17:10:42 2017 +0900
+
+    Update build.gradle
+
+commit 268bb93ff7cb4ce1018ddd641c2e847d1292e085
+Author: Word <isjang98@gmail.com>
+Date:   Tue Apr 18 17:14:23 2017 +0900
+
+    Update README.md
+
+commit c4e8134dbb78b4b6e7033b11d8c054cc40c4644e
+Author: word <word@word.local>
+Date:   Tue Apr 18 15:11:48 2017 +0900
+
+    - add image embossing.gif
+
+commit f00b339a6a4e4cd9a3323a906d3f7683e0f8aea4
+Author: word <word@word.local>
+Date:   Tue Apr 18 15:06:46 2017 +0900
+
+     - rm -r .idea
+
+commit ffbf1644c9f573b23407ffabdd79413a0a1592ca
+Author: word <word@word.local>
+Date:   Tue Apr 18 15:03:44 2017 +0900
+
+     - add .idea in .gitignore
+
+commit a4f210a08f6a1ac439e3fc6edfdced5143e2f182
+Author: word <word@word.local>
+Date:   Tue Apr 18 14:54:05 2017 +0900
+
+     - Add CACHE
+
+commit ad8a765903525c24bf7c780d174afc3cd221944c
+Author: word <word@word.local>
+Date:   Tue Apr 18 09:43:07 2017 +0900
+
+    - add key file
+
+commit 4b47a394d479ebc5bcae26e596c72e29c638ae61
+Author: word <word@word.local>
+Date:   Tue Apr 18 09:32:31 2017 +0900
+
+    - modify signing.properties
+
+commit 70f2205a4c4881f029712950925ca88dc3920d96
+Author: word <word@word.local>
+Date:   Tue Apr 18 08:57:21 2017 +0900
+
+    - add signing.properties
+
+commit 430bde853b9bc388db0432671e0734348966e6b7
+Author: word <word@word.local>
+Date:   Mon Apr 17 17:11:46 2017 +0900
+
+    - .travis.yml 추가
+
+commit a9b306dc6fca80d4c1cc27fd9e44017eb5f73de4
+Author: word <word@word.local>
+Date:   Mon Apr 17 16:44:21 2017 +0900
+
+    - Initial Project
+
+commit 743d5304cb8d9469d046a845bed780cd82986891
+Author: Word <isjang98@gmail.com>
+Date:   Mon Apr 17 15:27:30 2017 +0900
+
+    Initial commit

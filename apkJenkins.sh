@@ -1,8 +1,10 @@
+#!/bin/bash
+export COMMIT_MESSAGE=`git log -1 --pretty=%B`
 export DEPLOY_BRANCH="$BRANCH_NAME"
 export DEPLOY_COMMIT="$GIT_COMMIT"
 
 SLACK_KEY="$SLACK_BOT_TOKEN"
-SLACK_TEXT="[ \`$GIT_BRANCH\` | \`$DEPLOY_COMMIT\` ] ${CHANGE_TITLE:-none} "
+SLACK_TEXT="[ \`$GIT_BRANCH\` | \`$DEPLOY_COMMIT\` ] ${COMMIT_MESSAGE:-none} "
 
 curl \
   -F "token=$SLACK_KEY" \
