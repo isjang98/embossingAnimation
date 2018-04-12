@@ -6,10 +6,10 @@ url=${GIT_URL}
 url_without_suffix="${url%.*}"
 reponame="$(basename "${url_without_suffix}")"
 msg=$(git log -1 --pretty=%B)
-#echo "$tname"
-#echo $tname
-#echo "$tagname"
-#echo $tagname
+echo "$tname"
+echo $tname
+echo "$tagname"
+echo $tagname
 
 if [ $tagname -gt 0 ]
 then
