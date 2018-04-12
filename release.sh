@@ -15,8 +15,8 @@ if [ $tagname -gt 0 ]
 then
 	echo "tagname true"
 	echo $tagname
-	../../github-release release --user isjang98 --repo $reponame --tag $tname --name $tname --description "${GIT_TAG_MESSAGE}" 
-	../../github-release upload --user isjang98 --repo $reponame --tag $tname --name "app-release.apk" --file app/build/outputs/apk/app-release-unsigned.apk
+	./github-release release --user isjang98 --repo $reponame --tag $tname --name $tname --description "${GIT_TAG_MESSAGE}" 
+	./github-release upload --user isjang98 --repo $reponame --tag $tname --name "app-release.apk" --file app/build/outputs/apk/app-release-unsigned.apk
 else
 	echo "tagname false"
 fi
