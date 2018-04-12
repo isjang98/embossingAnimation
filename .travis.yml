@@ -1,3 +1,4 @@
+ii
 after_success: 
   - ./apk.sh
 dist: precise
